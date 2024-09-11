@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-prbg-primary-subtle bg-primary  fixed-top navv">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Logo.jpg" alt="" wigth="50" height="50"
+                    class="rounded-circle"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Information</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our School
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
+                            <li><a class="dropdown-item" href="#">About School</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Principle Message <span class="text-secondary small"> Mr. Ahmed Mansour</span></a></li>
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Admistions</a>
+                    </li>
+                </ul>
+                <!-- Search form and login button -->
+                <form class="d-flex gap-2 search ms-5" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fs-5" id="staticBackdropLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-primary">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                                aria-describedby="emailHelp">
+                            <!-- <div id="emailHelp" class="form-text">Not Shared with others</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h5>ADMISSION OPEN KG – GRADE 10</h5>
+                    <p>American Curriculum</p>
+                    <button class="btn btn-light">Apply Online</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Our vision</h5>
+                    <p>Our vision is of a holistic, student-centered learning environment that empowers and inspires our
+                        students to be creative</p>
+                    <button class="btn btn-light">Apply Online</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/img3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Inside the Classroom</h5>
+                    <p>Some of the best faculties from around the globe, mentor, and guide our students on their
+                        academic journey.</p>
+                    <button class="btn btn-light">Apply Online</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <i class="fa-solid fa-angles-left fs-4"></i>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <i class="fa-solid fa-angles-right fs-4"></i>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+  <ul class="icons list-unstyled list-group list-group-flush position-fixed p-4 " style="z-index:10; top:200px; right: 0;">
+    <li class="mb-3">
+        <a href="https://facebook.com" class="social-link border-0 bg-primary text-light rounded d-flex justify-content-center align-items-center p-2">
+            <i class="fab fa-whatsapp fs-3"></i>
+        </a>
+    </li>
+    <li class="mb-3">
+        <a href="https://twitter.com" class="social-link border-0 bg-primary text-light rounded d-flex justify-content-center align-items-center p-2">
+            <i class="fab fa-linkedin fs-3"></i>
+        </a>
+    </li>
+    <li class="mb-3">
+        <a href="https://instagram.com" class="social-link border-0 bg-primary text-light rounded d-flex justify-content-center align-items-center p-2">
+            <i class="fab fa-twitter fs-3"></i>
+        </a>
+    </li>
+    <li class="mb-3">
+        <a href="https://instagram.com" class="social-link border-0 bg-primary text-light rounded d-flex justify-content-center align-items-center p-2">
+            <i class="fab fa-facebook-f fs-3"></i>
+        </a>
+    </li>
+    <li class="mb-3">
+        <a href="https://telegram.com" class="social-link border-0 bg-primary text-light rounded d-flex justify-content-center align-items-center p-2">
+            <i class="fab fa-instagram fs-3"></i>
+        </a>
+    </li>
+</ul>
+
+
+    <div class=".container-fluid ">
+        <div class=" p-5 bg-transparent text-secondary rounded ">
+            <h1 class="font-weight-bold">Welcome to Bright Future School</h1>
+            <p >We are committed to providing a high-quality education that nurtures and empowers students to achieve
+                their full potential. At Bright Future, we strive to create a supportive, innovative, and enriching
+                environment where every student can thrive academically, socially, and emotionally</p>
+            <button class="btn btn-primary">Explore Now</button>
+        </div>
+
+    </div>
+
+    <div class="jumbotron jumbotron-fluid text-center my-4 py-5 bg-primary-subtle text-secondary">
+        <div class="container">
+            <h4 class="display-6 font-weight-bold" >About Bright Future School</h4>
+        </div>
+    </div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne ">
+                    Student Centered Learning
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body text-secondary">
+                    <strong>Kindergarten - Elementary-Middle School - High School
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Our vision
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body text-secondary">
+                    Our vision is of a holistic, student-centered learning environment that empowers and inspires our
+                    students to be creative, innovative, 21st-century leaders that believe in sustainability while
+                    holding true to traditions and Islamic values.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item ">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree text-secondary">
+                    Our Mission
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body text-secondary">
+                    Our mission is to champion a new model of learning that is relevant and effective in preparing
+                    learners for a fast-changing future, while still maintaining their own identity.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mt-5 bg-primary-subtle text-dark text-center ">
+        <div class="container">
+            <h1 class="display-6  text-secondary">A BRIEF HISTORY..</h1>
+            <p class="lead">Bright Future School is a private K-12 institution based in Dubai, United Arab Emirates,
+                offering a US curriculum education from KG to Grade 12. The school's mission is to equip students with
+                the skills and knowledge necessary to become global leaders.</p>
+        </div>
+    </div>
+    <div class="container-fluid  bg-secondary-subtle py-5 ">
+        <div class="input-area">
+            <div class="title">
+                <p class="display-6">Questions and Contact <small class="text-muted">Administration Contact</small></p>
+            </div>
+            <div class="inp my-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal"
+                    data-bs-toggle="tooltip" title="What's in your mind?">
+                    Ask question
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="orderModalLabel">Administration Contact</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Your message will reach the administration and they will contact you soon</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <textarea class="form-control" id="orderDetails" rows="3" placeholder="Message.."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mt-5 bg-primary-subtle text-secondary text-center">
+        <div class="container">
+            <h1 class="display-6 ">Add Feedback for our school</h1>
+            <p class="lead">Bright Future School is a private K-12 institution based in Dubai, United Arab Emirates,
+                offering a US curriculum education from KG to Grade 12. The school's mission is to equip students with
+                the skills and knowledge necessary to become global leaders.</p>
+        </div>
+    </div>
+    <div class="container-fluid  bg-secondary-subtle py-5 ">
+        <div class="input-area">
+            <div class="title">
+                <p class="display-6">Write your experience
+                    <small class="text-muted">Add Feedback</small></p>
+            </div>
+            <div class="inp my-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModall"
+                    data-bs-toggle="tooltip" title="What's in your mind?">
+                    Add Feedback
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="orderModall" tabindex="-1" aria-labelledby="orderModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="orderModalLabel">Provide Feedback for Our School</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Thank you for your time</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <textarea class="form-control" id="orderDetails" rows="3" placeholder="Message.."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mt-5 bg-primary-subtle text-secondary text-center">
+        <div class="container">
+            <h1 class="display-6 ">Apply now</h1>
+            <p class="lead">ًAdmission is now open for the academic year 2024 – 2025 from KG to Grade 10. Enroll today! write your number and we will contact you</p>
+        </div>
+    </div>
+    <div class="container-fluid  bg-secondary-subtle py-5 ">
+        <div class="input-area">
+            <div class="title">
+                <p class="display-6">Be in touch shortly<small class="text-muted"> We will contact you soon </small></p>
+            </div>
+            <div class="inp my-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModalll"
+                    data-bs-toggle="tooltip" title="What's in your mind?">
+                    Send
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="orderModalll" tabindex="-1" aria-labelledby="orderModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="orderModalLabel">Contact</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Your message will reach the administration and they will contact you soon</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <textarea class="form-control" id="orderDetails" rows="3" placeholder="Add number..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="container-fluid scroll-img col-12"></div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mb-4 text-center bg-primary-subtle text-secondary">
+        <div class="container">
+            <h1 class="display-4">Academics</h1>
+            <p class="lead">Curriculum provided by Bright Future School</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="cards container my-4">
+        <div class="row text-center">
+            <div class="col-xl-4 col-lg-6  col-12 my-2">
+                <div class="card overlay">
+                    <img src="images/Background-2.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Kindergarten Curriculum</h5>
+                        <p class="card-text">We are the best American Kindergarten Curriculum school in Dubai.
+                          Kindergarten Curriculum is based on age-specific learning goals 
+                           
+                        </p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6  col-12 my-2">
+                <div class="card  overlay">
+                    <img src="images/imgg2.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Elementary Curriculum</h5>
+                        <p class="card-text"> Our elementary program focuses on foundational skills and age-appropriate learning objectives, 
+                                              ensuring a academic start for every student</p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6  col-12 my-2">
+                <div class="card  overlay">
+                    <img src="images/Background-1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Secoundary Curriculum</h5>
+                        <p class="card-text">Our secondary program is designed with age-appropriate learning objectives
+                             and adheres to the latest educational standards. </p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards container my-4">
+        <div class="row text-center">
+            <div class="col-xl-4 col-lg-6  col-12 my-2">
+                <div class="card  overlay">
+                    <img src="images/imgg1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ullam</p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6  col-12 my-2">
+                <div class="card  overlay">
+                    <img src="images/imgg6.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ullam.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6  col-12 my-2">
+                <div class="card  overlay">
+                    <img src="images/imgg5.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, esse.</p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards container my-4">
+        <div class="row text-center">
+            <div class="col-xl-4  col-12 my-2 mx-auto">
+                <div class="card  overlay">
+                    <img src="images/imgg6.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repudiandae!</p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4  col-12 my-2 mx-auto">
+                <div class="card  overlay">
+                    <img src="images/imgg7.png" class="card-img-top" alt="Succulent Steak">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, at.</p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="container-fluid scroll-imgTwo  col-12"></div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid bg-primary-subtle text-secondary p-3 text-center">
+        <div class="container">
+            <h1 class="display-4">Latest News</h1>
+            <p class="lead">Latest events happened in Bright American school</p>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-xl-4 col-12 mb-3">
+                <div class="card text-light Event">
+                    <img src="images/event1.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Sports Day/h5>
+                        <p class="card-text">Promote physical fitness and team spirit</p>
+                        <!-- <img  src="images/event1.jpg" alt=""  wigth="70" height="70" class="rounded-pill"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-12 mb-3">
+                <div class="card text-light Event">
+                    <img src="images/event2.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Nature Exploration Picnic</h5>
+                        <p class="card-text">Combine outdoor fun with educational activities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-12 mb-3">
+                <div class="card text-light Event">
+                    <img src="images/event3.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">
+                            Cultural Festival
+                        </h5>
+                        <p class="card-text">Celebrate diversity by exploring different cultures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="p-4 text-center text-uppercase mb-4">
+            <h1>Bright Future School</h1>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 w-100">
+                <div class="card mb-3 col-12 picture-card" style="max-width: 100%;">
+                    <div class="row ">
+                        <div class="col-md-3 overflow-hidden">
+                            <img src="images/cover2.jpg" class="img-fluid rounded-start " alt="">
+                        </div>
+                        <div class="col-md-9 mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Empowering Students for a Bright Future</h5>
+                                <p class="card-text"><i class="fa-regular fa-calendar-days"></i> Mon , Jun 2nd 2023</p>
+                                <p class="card-text card-line"></p>
+                                <p class="card-text fs-5"> Top American school in Dubai, empowering each student to thrive as a lifelong partner and courageous citizen by fostering creativity, inclusivity, and character. We take pride in providing a high-quality learning experience delivered by highly qualified teachers of diverse nationalities who will challenge each student to reach their full potential while nurturing their individual talents. Our curriculum is designed following the USA and UAE Ministry of Education graduation requirements. </p>
+                                <p class="card-text fs-5">Through our rigorous curriculum aligned with both the USA and UAE Ministry of Education standards, we equip each student with the skills and knowledge necessary to thrive in higher education and beyond.
+                                </p>
+                                <div class=" row ">
+                                    <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                        <ul class="card-list list-unstyled">
+                                            <li class="d-inline-block bg-secondary rounded px-2 p-1 text-light my-2"><i
+                                                    class="fa-solid fa-tag"></i> Summary</li>
+                                            <li
+                                                class="d-inline-block mx-1 bg-secondary rounded p-1 px-2 text-light my-2">
+                                                <i class="fa-solid fa-clock"></i> 10 mins</li>
+                                            <li class="d-inline-block bg-secondary rounded p-1 text-light my-2"><i
+                                                    class="fa-solid fa-play"></i> Play Video</li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 w-100">
+                <div class="card mb-3 col-12 picture-card " style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Fostering Tomorrow's Leaders</h5>
+                                <p class="card-text"><i class="fa-regular fa-calendar-days"></i> Tues , May 20th 2023</p>
+                                <p class="card-text card-line"></p>
+                                <p class="card-text fs-5"> Top American school in Dubai, empowering each student to thrive as a lifelong partner and courageous citizen by fostering creativity, inclusivity, and character. We take pride in providing a high-quality learning experience delivered by highly qualified teachers of diverse nationalities who will challenge each student to reach their full potential while nurturing their individual talents. Our curriculum is designed following the USA and UAE Ministry of Education graduation requirements. </p>
+                                <p class="card-text fs-5">Through our rigorous curriculum aligned with both the USA and UAE Ministry of Education standards, we equip each student with the skills and knowledge necessary to thrive in higher education and beyond.
+                                </p>
+                                <div class=" row ">
+                                    <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                        <ul class="card-list list-unstyled">
+                                            <li class="d-inline-block bg-secondary rounded px-2 p-1 text-light my-2"><i
+                                                    class="fa-solid fa-tag"></i> Summary</li>
+                                            <li
+                                                class="d-inline-block mx-1 bg-secondary rounded p-1 px-2 text-light my-2">
+                                                <i class="fa-solid fa-clock"></i> 10 mins</li>
+                                            <li class="d-inline-block bg-secondary rounded p-1 text-light my-2"><i
+                                                    class="fa-solid fa-play"></i> Play Video</li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 overflow-hidden"><img src="images/grad.png"
+                                class="img-fluid rounded-start" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 w-100">
+                    <div class="card mb-3 col-12 picture-card" style="max-width: 100%;">
+                        <div class="row ">
+                            <div class="col-md-3 overflow-hidden">
+                                <img src="images/cover2.jpg" class="img-fluid rounded-start " alt="">
+    
+                            </div>
+                            <div class="col-md-9 mt-4">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-1">Empowering Students for a Bright Future</h5>
+                                    <p class="card-text"><i class="fa-regular fa-calendar-days"></i> Mon , may 20th 2023</p>
+                                    <p class="card-text card-line"></p>
+                                <p class="card-text fs-5"> Top American school in Dubai, empowering each student to thrive as a lifelong partner and courageous citizen by fostering creativity, inclusivity, and character. We take pride in providing a high-quality learning experience delivered by highly qualified teachers of diverse nationalities who will challenge each student to reach their full potential while nurturing their individual talents. Our curriculum is designed following the USA and UAE Ministry of Education graduation requirements. </p>
+                                <p class="card-text fs-5">Through our rigorous curriculum aligned with both the USA and UAE Ministry of Education standards, we equip each student with the skills and knowledge necessary to thrive in higher education and beyond.
+                                </p>
+                                <div class=" row ">
+                                    <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                        <ul class="card-list list-unstyled">
+                                            <li class="d-inline-block bg-secondary rounded px-2 p-1 text-light my-2"><i
+                                                    class="fa-solid fa-tag"></i> Summary</li>
+                                            <li
+                                                class="d-inline-block mx-1 bg-secondary rounded p-1 px-2 text-light my-2">
+                                                <i class="fa-solid fa-clock"></i> 10 mins</li>
+                                            <li class="d-inline-block bg-secondary rounded p-1 text-light my-2"><i
+                                                    class="fa-solid fa-play"></i> Play Video</li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 w-100">
+                    <div class="card mb-3 col-12 picture-card" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-1">Fostering Tomorrow's Leaders</h5>
+                                    <p class="card-text"><i class="fa-regular fa-calendar-days"></i> Wed , Thurs 1st 2023</p>
+                                    <p class="card-text card-line"></p>
+                                <p class="card-text fs-5"> Top American school in Dubai, empowering each student to thrive as a lifelong partner and courageous citizen by fostering creativity, inclusivity, and character. We take pride in providing a high-quality learning experience delivered by highly qualified teachers of diverse nationalities who will challenge each student to reach their full potential while nurturing their individual talents. Our curriculum is designed following the USA and UAE Ministry of Education graduation requirements. </p>
+                                <p class="card-text fs-5">Through our rigorous curriculum aligned with both the USA and UAE Ministry of Education standards, we equip each student with the skills and knowledge necessary to thrive in higher education and beyond.
+                                </p>
+                                <div class=" row ">
+                                    <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                        <ul class="card-list list-unstyled">
+                                            <li class="d-inline-block bg-secondary rounded px-2 p-1 text-light my-2"><i
+                                                    class="fa-solid fa-tag"></i> Summary</li>
+                                            <li
+                                                class="d-inline-block mx-1 bg-secondary rounded p-1 px-2 text-light my-2">
+                                                <i class="fa-solid fa-clock"></i> 10 mins</li>
+                                            <li class="d-inline-block bg-secondary rounded p-1 text-light my-2"><i
+                                                    class="fa-solid fa-play"></i> Play Video</li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-3 overflow-hidden"><img src="images/grad.png"class="img-fluid rounded-start" alt=""></div>
+                        </div>
+                    </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="p-4 text-center text-uppercase my-5 ">
+                    <h1>Social Media Links</h1>
+                </div>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-3 col-12">
+                        <div class="card  text-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent border-white text-center">Twitter</div>
+                            <div class="card-body text-center text-white">
+                                <!-- <h5 class="card-title">Discover on Twitter</h5> -->
+                                <!-- <p class="card-text">Explore new recipes and updates. Follow us on Twitter ! Follow us on Twitter </p> -->
+                                <a href="https://twitter.com" class="text-white">
+                                    <img src="images/Twitter.jpg" alt=""  wigth="200" height="200">
+                                </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-white text-center">
+                                <small>Go to link</small>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+        
+        
+                    <div class="col-lg-3 col-12">
+                        <div class="card  text-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent border-white text-center">Instagram</div>
+                            <div class="card-body text-center text-white">
+                                <!-- <h5 class="card-title">Discover on Twitter</h5> -->
+                                <!-- <p class="card-text">Explore new recipes and updates. Follow us on Twitter ! Follow us on Twitter </p> -->
+                                <a href="https://twitter.com" class="text-white">
+                                    <img src="images/insta.jpg" alt=""  wigth="200" height="200">
+                                </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-white text-center">
+                                <small>Go to link</small>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+        
+        <div class="col-lg-3 col-12">
+            <div class="card  text-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-white text-center">Linked In</div>
+                <div class="card-body text-center text-white">
+                    <!-- <h5 class="card-title">Discover on Twitter</h5> -->
+                    <!-- <p class="card-text">Explore new recipes and updates. Follow us on Twitter ! Follow us on Twitter </p> -->
+                    <a href="https://twitter.com" class="text-white">
+                        <img src="images/linked.jpg" alt=""  wigth="200" height="200">
+                    </a>
+                </div>
+                <div class="card-footer bg-transparent border-white text-center">
+                    <small>Go to link</small>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-12">
+            <div class="card  text-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-white text-center">What's app </div>
+                <div class="card-body text-center text-white">
+                    <!-- <h5 class="card-title">Discover on Twitter</h5> -->
+                    <!-- <p class="card-text">Explore new recipes and updates. Follow us on Twitter ! Follow us on Twitter </p> -->
+                    <a href="https://twitter.com" class="text-white">
+                        <img src="images/WhatsApp.jpg" alt=""  wigth="200" height="200">
+                    </a>
+                </div>
+                <div class="card-footer bg-transparent border-white text-center">
+                    <small>Go to link</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 bg-dark py-3">
+          <div class="img-foot text-center border-1 border-bottom border-top py-3">
+            <img src="images/Logo.jpg" alt="" class="border rounded-circle d-inline mx-2 foot-img" width="70" height="70">
+            <p class="text-capitalize d-inline text-light">Bright Future</p>
+          </div>
+
+          <div class="info-foot text-center mt-3 text-light">
+            <p>Phone : 011 2233 4455</p>
+            <p>Address : UAE - Dubai</p>
+            <p>Tel : 000-888-999</p>
+          </div>  
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 bg-dark py-3">
+          <div class="img-foot text-center border-1 border-bottom border-top py-3">
+            <img src="images/Logo.jpg" alt="" class="border rounded-circle d-inline mx-2 foot-img" width="70" height="70">
+            <p class="text-capitalize d-inline  text-light">important links</p>
+          </div>
+
+          <div class=" textt text-center mt-3 ">
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Take alook</a></p>
+            <p><a href="#">Contact Us</a></p>
+          </div>  
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 bg-dark py-3">
+          <div class="img-foot text-center border-1 border-bottom border-top py-3">
+            <img src="images/Logo.jpg" alt="" class="border rounded-circle d-inline mx-2 foot-img" width="70" height="70">
+            <p class="text-capitalize d-inline  text-light">vision</p>
+          </div>
+
+          <div class=" text-center mt-3 text-light">
+            <p>Serveices for all</p>
+            <p>Provide best serveices</p>
+            <p>You will be comfortable than before</p>
+          </div>  
+        </div>
+
+        <div class="col-12 bg-dark pt-3 img-foot text-center border-1border-bottom border-top ">
+          <p class=" text-light">Copyright &copy; 2021 City Bright Future School Dubai. All Rights Reserved. Designed by Samaa.com
+        </p>  
+        </div>
+        <div class="bg-dark p-2"></div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
